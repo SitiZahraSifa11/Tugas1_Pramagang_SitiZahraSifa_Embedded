@@ -1,12 +1,12 @@
 # Tugas1_Pramagang_SitiZahraSifa_Embedded
 
 # Simulasi IoT - Pembacaan Sensor & Pengiriman Data (MQTT)
-Proyek ini merupakan implementasi sistem Internet of Things (IoT) yang
+Tugas ini merupakan implementasi sistem Internet of Things (IoT) yang
 menggunakan perangkat keras yaitu alat fisik asli untuk membaca data sensor
 suhu dan kelembaban, kemudian mengirimkan data tersebut ke broker MQTT
 secara real-time.
 
-Sistem dikembangkan menggunakan Arduino IDE dengan board ESP32
+Sistem ini menggunakan Arduino IDE dengan board ESP32
 dan sensor DHT11
 
 Proyek ini dibuat untuk memenuhi Tugas Awal Magang

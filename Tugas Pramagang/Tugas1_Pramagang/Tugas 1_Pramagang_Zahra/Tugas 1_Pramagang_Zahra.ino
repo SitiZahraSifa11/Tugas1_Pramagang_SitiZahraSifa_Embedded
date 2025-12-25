@@ -46,7 +46,7 @@ void setup() {
   setupWiFi();
 
   client.setServer(mqtt_server, mqtt_port);
-  dht.setup(15, DHTesp::DHT11); // GPIO 15
+  dht.setup(15, DHTesp::DHT11); 
 }
 
 void loop() {

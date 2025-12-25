@@ -2,21 +2,21 @@
 #include <PubSubClient.h>
 #include <DHTesp.h>
 
-// ===== WIFI =====
+
 const char* ssid = "Karna Roastwork";
 const char* password = "followigkarna";
 
-// ===== MQTT =====
+
 const char* mqtt_server = "test.mosquitto.org";
 const int mqtt_port = 1883;
 const char* topic = "magang/iot/arduinoide";
 
-// ===== OBJECT =====
+
 WiFiClient espClient;
 PubSubClient client(espClient);
 DHTesp dht;
 
-// ===== WIFI CONNECT =====
+
 void setupWiFi() {
   Serial.print("Connecting to WiFi");
   WiFi.begin(ssid, password);
@@ -27,7 +27,7 @@ void setupWiFi() {
   Serial.println("\nWiFi connected");
 }
 
-// ===== MQTT CONNECT =====
+
 void reconnectMQTT() {
   while (!client.connected()) {
     Serial.print("Connecting to MQTT...");
@@ -46,7 +46,7 @@ void setup() {
   setupWiFi();
 
   client.setServer(mqtt_server, mqtt_port);
-  dht.setup(15, DHTesp::DHT11); // GPIO 15
+  dht.setup(15, DHTesp::DHT11); 
 }
 
 void loop() {
